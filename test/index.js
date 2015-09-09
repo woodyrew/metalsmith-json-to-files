@@ -7,15 +7,27 @@ var json_to_files = require('../lib');
 
 describe('metalsmith-json-to-files', function(){
 
-    it('should do basic file generation', function(done){
+    it('should do basic file generation', function (done){
 
         new Metalsmith('test/fixtures/basic')
         .use(json_to_files({
-            source_path: './basic.json'
+            source_path: '../json/'
         }))
         .build(function(err){
             if (err){ return done(err); }
+            
             equal('test/fixtures/basic/expected', 'test/fixtures/basic/build');
+            done();
+        });
+    });
+    
+    it('should fail without source_path', function (done){
+
+        new Metalsmith('test/fixtures/basic')
+        .use(json_to_files())
+        .build(function(err){
+            
+            expect(err).to.be.an('error');
             done();
         });
     });
