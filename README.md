@@ -40,5 +40,8 @@ json_files:
 Take a look...
 ```
 
+Any extra metadata within the `json_files` object will be passed through to the files it generates as `data.`
+
+
 ## License
 GPL-2.0

@@ -1,6 +1,7 @@
 [
 	{
-		"name": "success.html",
-		"content": "Test Success"
+		"filename": "success",
+		"name": "Test Success",
+		"contents": "JSON === Winning"
 	}
 ]
