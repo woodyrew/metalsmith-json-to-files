@@ -1,4 +1,6 @@
-# metalsmith-json-to-files
+[![Build Status](https://travis-ci.org/woodyrew/metalsmith-json-to-files.svg)](https://travis-ci.org/woodyrew/metalsmith-json-to-files)
+
+# Metalsmith json to files
 Creates files from supplied JSON
 
 A [Metalsmith](https://github.com/segmentio/metalsmith) plugin that lets you generate files from `JSON`.
