@@ -44,6 +44,9 @@ Take a look...
 
 Any extra metadata within the `json_files` object will be passed through to the files it generates as `data.`
 
+## Examples
+See the [metalsmith-json-to-files CLI example](https://github.com/toddmorey/metalsmith-json-to-files-example)
+
 
 ## License
 GPL-2.0
