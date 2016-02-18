@@ -95,7 +95,7 @@ describe('metalsmith-json-to-files file generation with templates', function () 
             source_path: '../json/'
         }))
         .use(templates({
-            engine     : 'handlebars'
+            engine   : 'handlebars'
           , directory: 'templates'
         }))
         .build(function (err) {
