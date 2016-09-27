@@ -30,6 +30,7 @@
     "async": "^1.4.2",
     "debug": "^2.2.0",
     "joi": "^6.6.1",
+    "jsonfile": "^2.4.0",
     "lodash": "^3.10.1",
     "slug-component": "^1.1.0"
   },
