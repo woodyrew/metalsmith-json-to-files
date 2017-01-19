@@ -107,6 +107,34 @@ describe('metalsmith-json-to-files file generation with templates', function () 
     });
 });
 
+describe('metalsmith-json-to-files file generation from metadata', function () {
+
+    var test_path = 'test/fixtures/file_generation_metadata';
+
+    it('should do basic file generation', function (done) {
+
+        new Metalsmith(test_path)
+        .metadata({
+            test_json: [
+                {
+                    filename: 'success'
+                  , name    : 'Test Success'
+                  , contents: 'JSON === Winning'
+                }
+            ]
+        })
+        .use(json_to_files({
+            use_metadata: true
+        }))
+        .build(function (err) {
+            if (err) { return done(err); }
+
+            equal(test_path + '/expected', test_path + '/build');
+            done();
+        });
+    });
+});
+
 describe('metalsmith-json-to-files Tests', function () {
     it('should handle missing json file');
     it('should handle filename not being able to be generated');
