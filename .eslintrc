@@ -21,3 +21,5 @@ rules:
     quotes: [2, "single", "avoid-escape"]
     space-before-function-paren: [2, "always"]
     valid-jsdoc: [1, {requireParamDescription: false, requireReturnDescription: false}]
+    guard-for-in: 0
+    no-loop-func: 0

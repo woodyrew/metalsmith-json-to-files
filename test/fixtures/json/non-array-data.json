@@ -1,0 +1,11 @@
+{
+	"fileName1": {
+		"contents": "hello world",
+		"size": "5kb"
+	},
+
+	"fileName2": {
+		"contents": "foo bar",
+		"size": "3kb"
+	}
+}
