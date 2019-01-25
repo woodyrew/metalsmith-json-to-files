@@ -54,6 +54,19 @@ Take a look...
 
 Any extra metadata within the `json_files` object will be passed through to the files it generates as `data.`
 
+### Rename `data` object
+
+The `data` object can be renamed by including `rename_data_to` in the front matter:
+```md
+---
+name: My Posts
+template: posts.hbs
+json_files:
+    rename_data_to: itemData
+---
+```
+
+
 ## Examples
 
 See the [metalsmith-json-to-files CLI example](https://github.com/toddmorey/metalsmith-json-to-files-example)
