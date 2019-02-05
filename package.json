@@ -9,7 +9,7 @@
     "posttest": "npm run lint",
     "dev-test": "nodemon --exec 'npm test'",
     "version": "npm test",
-    "postversion": "git push && git push --tags"
+    "postversion": "git push && git push --tags && npm publish"
   },
   "repository": {
     "type": "git",
