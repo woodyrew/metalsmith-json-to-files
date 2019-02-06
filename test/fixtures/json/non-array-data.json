@@ -1,11 +1,11 @@
 {
-	"fileName1": {
-		"contents": "hello world",
-		"size": "5kb"
+	"object1": {
+		"slug": "hello world",
+		"someProperty": "5kb"
 	},
 
-	"fileName2": {
-		"contents": "foo bar",
-		"size": "3kb"
+	"object2": {
+		"slug": "foo bar",
+		"someProperty": "3kb"
 	}
 }
