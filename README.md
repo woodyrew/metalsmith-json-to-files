@@ -66,6 +66,28 @@ json_files:
 ---
 ```
 
+### Pass data directly (unwrapped) into the page
+
+By default JSON data is wrapped in a `data` object in the page, but sometimes we want to pass it directly as if we'd written it in front matter (eg. it might be handy to pass `tags` for use by other plugins).
+
+This can be achieved by using `passthrough`, an array of objects each containing:
+- the key of an object we wish to pass directly (`from`)
+- what we want to call it in the page (`to`)
+
+So the following example will pass `tags` directly into the page. It will also pass `date` into the page, renamed to `publishedDate`: 
+```md
+---
+name: My Posts
+template: posts.hbs
+json_files:
+  passthrough:
+    - from: tags
+      to: tags
+    - from: date
+      to: publishedDate
+---
+```
+
 
 ## Examples
 
