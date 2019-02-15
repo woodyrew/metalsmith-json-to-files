@@ -44,7 +44,6 @@
     "eslint-config-prettier": "^4.0.0",
     "eslint-plugin-prettier": "^3.0.1",
     "handlebars": "^4.0.12",
-    "harmonize": "^2.0.0",
     "metalsmith": "^2.3.0",
     "metalsmith-templates": "^0.7.0",
     "mocha": "^5.2.0",
