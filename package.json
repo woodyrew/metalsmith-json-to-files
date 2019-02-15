@@ -1,13 +1,15 @@
 {
   "name": "metalsmith-json-to-files",
-  "version": "1.1.0",
+  "version": "2.0.0",
   "description": "A metalsmith plugin to generate files from JSON",
   "main": "lib/index.js",
   "scripts": {
-    "lint": "eslint .",
+    "lint": "eslint --cache --fix .",
     "test": "mocha",
     "posttest": "npm run lint",
-    "dev-test": "nodemon --exec 'npm test'"
+    "dev-test": "nodemon --exec 'npm test'",
+    "version": "npm test",
+    "postversion": "git push && git push --tags && npm publish"
   },
   "repository": {
     "type": "git",
@@ -20,28 +22,32 @@
     "generator",
     "files"
   ],
-  "author": "Woody Goodricke <hi@woodygoodricke.com>",
+  "author": "Woody Goodricke <github@andrewgoodricke.com>",
   "license": "GPL-2.0",
   "bugs": {
     "url": "https://github.com/woodyrew/metalsmith-json-to-files/issues"
   },
   "homepage": "https://github.com/woodyrew/metalsmith-json-to-files#readme",
   "dependencies": {
-    "async": "^1.4.2",
-    "debug": "^2.2.0",
-    "joi": "^6.6.1",
-    "jsonfile": "^2.4.0",
-    "lodash": "^3.10.1",
+    "async": "^2.6.1",
+    "debug": "^4.1.1",
+    "joi": "^14.3.1",
+    "jsonfile": "^5.0.0",
+    "lodash.assign": "^4.2.0",
+    "lodash.get": "^4.4.2",
     "slug-component": "^1.1.0"
   },
   "devDependencies": {
-    "assert-dir-equal": "^1.0.1",
-    "chai": "^3.2.0",
-    "eslint": "^1.10.3",
-    "handlebars": "^4.0.2",
+    "assert-dir-equal": "^1.1.0",
+    "chai": "^4.2.0",
+    "eslint": "^5.13.0",
+    "eslint-config-prettier": "^4.0.0",
+    "eslint-plugin-prettier": "^3.0.1",
+    "handlebars": "^4.0.12",
     "harmonize": "^2.0.0",
-    "metalsmith": "^2.0.1",
+    "metalsmith": "^2.3.0",
     "metalsmith-templates": "^0.7.0",
-    "mocha": "^2.3.2"
+    "mocha": "^5.2.0",
+    "prettier": "^1.16.4"
   }
 }
