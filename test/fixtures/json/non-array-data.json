@@ -1,0 +1,11 @@
+{
+	"object1": {
+		"slug": "hello world",
+		"someProperty": "5kb"
+	},
+
+	"object2": {
+		"slug": "foo bar",
+		"someProperty": "3kb"
+	}
+}
